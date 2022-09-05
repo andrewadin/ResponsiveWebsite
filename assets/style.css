@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+.title{
+    text-align: center;
+}
+.title h1{
+    font-size: 4vmin;
+}
+/* Navbar */
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 90%;
+    justify-content: end;
+    padding: 20px;
+
+}
+.navbar .nav-link li a{
+    color: whitesmoke;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+}
+.nav-link li{
+    margin: 0 30px;
+}
+.nav-link li a:hover{
+    color: rgb(187, 133, 59);
+}
+/* Hero */
+#hero{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./images/img1.jpg');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.hero-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+.hero-content h2{
+    font-size: 4vmin;
+}
+.hero-content h1{
+    font-size: 7vmin;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background: rgb(60, 128, 239);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Portfolio */
+#portfolio{
+    width: 80%;
+    margin: 80px auto;
+}
+#portfolio .row{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+#portfolio .col{
+    flex-direction: column;
+    margin: 5px;
+}
+#portfolio .row .col{
+    align-items: center;
+    margin-bottom: 25px;
+}
+#portfolio .row .col img{
+    max-width: 100%;
+    height: auto;
+}
+#portfolio .row .col h4{
+    font-size: 4vmin;
+}
+#portfolio .row .col p{
+    font-size: 2.2vmin;
+    padding: 0 40px;
+    margin-top: 10px;
+}
+/* About Me */
+#about{
+    width: 80%;
+    margin: 80px auto;
+}
+#about .about-content .row{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+#about .about-content .col{
+    flex-direction: column;
+    margin: 5px;
+}
+#about .about-content img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+#about .about-content h1{
+    font-size: 4vmin;
+    margin-bottom: 10px;
+}
+#about .about-content p{
+    padding: 5px
+}
+
+/* Contact Me */
+#contact{
+    width: 80%;
+    margin: 80px auto;
+}
+#contact .contact-content{
+    display: flex;
+    justify-content: center;
+}
+#contact .contact-content .icon-fb{
+    width: 70px;
+    height: 70px;
+    color: blue;
+    vertical-align: middle;
+}
+#contact .contact-content .icon-ig{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    background: radial-gradient(circle at 30% 107%, rgba(253,244,151,1) 0%, rgba(253,244,151,1) 5%, rgba(253,89,73,1) 45%, rgba(214,36,159,1) 60%, rgba(40,90,235,1) 90%);
+    color: white;
+    padding: 3px;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+#contact .contact-content .icon-github, .icon-mail{
+    width: 70px;
+    height: 70px;
+    color: black;
+    vertical-align: middle;
+}
+#contact .contact-content span{
+    font-size: 3vmin;
+    vertical-align: middle;
+    color: black;
+}
+/* Mobile Device */
+@media only screen and (max-width: 850px){
+    .navbar{
+        padding: 0;
+        width: 100%;
+    }
+    .nav-link{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: darkslateblue;
+        margin-top: -9000px;
+        transition: 0.5s;
+    }
+    .nav-link li{
+        margin: 30px auto;
+    }
+    .menu{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        cursor: pointer;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+    }
+    .bar{
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        margin: 5px 0;
+    }
+    #portfolio .row{
+        flex-direction: column;
+    }
+    #portfolio .row .col p{
+        font-size: 4vmin;
+    }
+    #about .row{
+        flex-direction: column;
+    }
+}

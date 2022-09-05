@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-link">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#portfolio">Protfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+    <section id="hero">
+        <div class="hero-content">
+            <h2>This is My Personal Website</h2>
+            <div class="line"></div>
+            <h1>Welcome!</h1>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="title">
+            <h1>Portfolio</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./assets/images/img2.jpg" alt="">
+                <h4>Snowy Night</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae eum pariatur, a velit obcaecati dolorem.</p>
+            </div>
+            <div class="col">
+                <img src="./assets/images/img3.jpg" alt="">
+                <h4>NYC Puddle</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae eum pariatur, a velit obcaecati dolorem.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./assets/images/img4.jpg" alt="">
+                <h4>Night Time</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae eum pariatur, a velit obcaecati dolorem.</p>
+            </div>
+            <div class="col">
+                <img src="./assets/images/img5.jpg" alt="">
+                <h4>Light Up</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae eum pariatur, a velit obcaecati dolorem.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./assets/images/img6.jpg" alt="">
+                <h4>Night Trem</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae eum pariatur, a velit obcaecati dolorem.</p>
+            </div>
+            <div class="col">
+                <img src="./assets/images/img7.jpg" alt="">
+                <h4>Rainy Day</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae eum pariatur, a velit obcaecati dolorem.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="title">
+            <h1>About Me</h1>
+            <div class="line"></div>
+        </div>
+        <div class="about-content">
+            <div class="row">
+                <div class="col">
+                    <img src="./assets/images/my_picture.jpg" alt="">
+                </div>
+                <div class="col">
+                    <h1>Hello, I'm Andrew</h1>
+                    <h3>I'm a freelance photographer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius laudantium, totam adipisci blanditiis iste saepe mollitia tenetur perferendis corporis eum similique repellat accusamus dolorem minima iusto! Sit, quibusdam dolore nostrum ad sunt consectetur corporis est doloremque sed reprehenderit enim itaque officiis assumenda voluptatem provident molestiae temporibus unde vel aspernatur labore!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="title">
+            <h1>Contact Me</h1>
+            <div class="line"></div>
+        </div>
+        <div class="contact-content">
+            <ul>
+                <li><a href="https://www.facebook.com/andrew.adinugraha"><ion-icon class="icon-fb" name="logo-facebook"></ion-icon><span>facebook.com/andrew.adinugraha</span></a></li>
+                <li><a href="https://www.instagram.com/andrew.adinugraha"><ion-icon class="icon-ig" name="logo-instagram"></ion-icon><span>instagram.com/andrewadi.n</span></a></li>
+                <li><a href="https://www.github.com/andrewadin"><ion-icon class="icon-github" name="logo-github"></ion-icon><span>github.com/andrewadin</span></a></li>
+                <li><ion-icon class="icon-mail" name="mail-outline"></ion-icon><span>andrew.adinugraha@gmail.com</span></li>
+            
+            </ul>
+        </div>
+    </section>
+    <script>
+        const menuBtn = document.querySelector('.menu');
+        const navLink = document.querySelector('.nav-link');
+
+        menuBtn.addEventListener('click', ()=>{
+            navLink.classList.toggle('mobile-menu')
+        });
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
